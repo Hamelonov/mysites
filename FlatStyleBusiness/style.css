@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.cdnfonts.com/css/liberation-sans");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Liberation Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1024px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background: #4d99a5;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87px;
+}
+.menu ul li {
+  float: left;
+  color: #dce3e4;
+  -webkit-transform: scale(1, 1.3);
+          transform: scale(1, 1.3); /* Вытягиваем по высоте текст в 1.3 раза */
+  display: inline-block; /* Чтобы transform работал корректно */
+  -webkit-transform-origin: center;
+          transform-origin: center; /* Точка трансформации */
+}
+.menu ul li:hover {
+  color: #fff;
+}
+.menu ul li a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #dce3e4;
+  text-transform: uppercase;
+}
+.menu ul li a:hover {
+  color: #fff;
+}
+.menu ul li:last-child > a {
+  margin: 0 10px 0 22px;
+}
+
+.logo {
+  font-family: "Cherry Swash", serif;
+  font-size: 40px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.slider {
+  height: 475px;
+  background: url("../img/bg.jpg") 0 -100px no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider h2 {
+  font-size: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 35px;
+  max-width: 530px;
+}
+.slider .btn {
+  color: #cdced0;
+  font-size: 30px;
+  font-weight: lighter;
+  border: 3px solid #afb1b4;
+  padding: 8px 40px;
+  letter-spacing: 0;
+  border-radius: 5px;
+}
+.slider .btn:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0 80px 0;
+  text-align: center;
+  color: #4c505d;
+}
+.service h2 {
+  font-size: 30px;
+  max-width: 650px;
+  line-height: 1.5em;
+  margin-bottom: 35px;
+}
+.service h2 span {
+  font-weight: 600;
+}
+.service p {
+  max-width: 860px;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+.service .service-links a {
+  margin: 0 60px;
+}
+
+.about {
+  background: #00d089;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 95px 0;
+}
+.about .photo {
+  position: relative;
+  margin-bottom: 55px;
+}
+.about .photo .name {
+  font-size: 30px;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  left: calc(100% + 40px);
+  width: 100%;
+  height: 100%;
+  background: url("../img/quote.png") left bottom no-repeat;
+}
+.about p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.7em;
+  max-width: 960px;
+}
+
+.contact {
+  background: url("../img/map.jpg") center no-repeat;
+  height: 635px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.contact .contact-circle {
+  background: rgba(255, 255, 255, 0.7);
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact-form {
+  width: 270px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.contact .contact-form input, .contact .contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #a5a7ae;
+  font-size: 14px;
+  color: #a5a7ae;
+  padding: 10px 15px;
+  margin-bottom: 14px;
+  height: 33px;
+}
+.contact .contact-form .message {
+  height: 80px;
+  margin-bottom: 33px;
+}
+.contact .contact-form button {
+  width: 60px;
+  height: 60px;
+  background: #fff url("../img/check.png") center/cover no-repeat;
+}
+.contact footer {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #00d089;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
